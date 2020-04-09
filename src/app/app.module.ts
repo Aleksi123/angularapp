@@ -7,6 +7,13 @@ import { NoteformComponent } from './noteform/noteform.component';
 import { NotelistComponent } from './notelist/notelist.component';
 import { NoteComponent } from './note/note.component';
 import { TopbarComponent } from './topbar/topbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -18,8 +25,21 @@ import { TopbarComponent } from './topbar/topbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatCardModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
+  /*   exports: [
+      MatToolbarModule,
+      MatFormFieldModule,
+      MatCardModule,
+      MatInputModule
+    ], */
   providers: [],
   bootstrap: [AppComponent]
 })

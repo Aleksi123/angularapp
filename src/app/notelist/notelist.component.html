@@ -1,1 +1,8 @@
-<p>notelist works!</p>
+<!-- <p>notelist works!</p> -->
+
+<div *ngFor="let note of notes">
+  <mat-card>
+    {{ note.title }}
+    {{ note.content }}
+  </mat-card>
+</div>
