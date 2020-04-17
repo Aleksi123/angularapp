@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class NoteService {
   notes = [
-    {
+    /* {
       id: 1,
       title: "note1title",
       content: "note1content"
@@ -14,7 +14,7 @@ export class NoteService {
       id: 2,
       title: "note2title",
       content: "note2content"
-    }
+    } */
   ];
 
   createNote(note) {
