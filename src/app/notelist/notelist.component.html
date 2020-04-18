@@ -1,8 +1,7 @@
-<!-- <p>notelist works!</p> -->
-
 <div *ngFor="let note of notes">
   <mat-card>
-    {{ note.title }} <br />
-    {{ note.content }}
+    Title: {{ note.title }} <br />
+    Content: {{ note.content }} <br /> <!-- {{ notes.indexOf(note) }} -->
+    <button (click)="deleteNote(notes.indexOf(note))" mat-raised-button color="warn">Delete</button>
   </mat-card>
 </div>

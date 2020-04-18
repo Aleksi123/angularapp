@@ -17,6 +17,8 @@ export class NoteService {
     } */
   ];
 
+  constructor() { }
+
   createNote(note) {
     this.notes.push(note);
   }
@@ -25,11 +27,8 @@ export class NoteService {
     return this.notes;
   }
 
-  deleteNotes() {
-    this.notes = [];
-    return this.notes;
+  deleteNote(id){
+    this.notes.splice(id, 1)
   }
-
-  constructor() { }
 
 }
